@@ -27,7 +27,8 @@
               }
             ],
             "styles": [
-              "src/assets/lib/bootstrap/dist/css/bootstrap.min.css",
+              /* boostrap */
+              "src/lib/bootstrap/dist/css/bootstrap.min.css",
               "node_modules/aos/dist/aos.css",
 
               "src/styles.css",
@@ -40,11 +41,11 @@
               "node_modules/aos/dist/aos.js",
               "node_modules/typed.js/dist/typed.umd.js",
 
-
-              "src/wwwroot/lib/jquery/dist/jquery.min.js",
-              "src/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js",
-              "src/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
-              "src/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js",
+              /* boostrap */
+              "src/lib/jquery/dist/jquery.min.js",
+              "src/lib/jquery-validation/dist/jquery.validate.min.js",
+              "src/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
+              "src/lib/bootstrap/dist/js/bootstrap.bundle.min.js",
 
 
               "src/wwwroot/js/main.js",
