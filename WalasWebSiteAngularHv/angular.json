@@ -27,7 +27,7 @@
               }
             ],
             "styles": [
-              "assets/lib/bootstrap/dist/css/bootstrap.min.css",
+              "src/assets/lib/bootstrap/dist/css/bootstrap.min.css",
               "node_modules/aos/dist/aos.css",
 
               "src/styles.css",
