@@ -1,0 +1,1180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Walas WebSite</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="assets/img/IcoW.jpg" rel="icon">
+    <link href="assets/img/IcoW.jpg" rel="IcoW">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- =======================================================
+    * Template Name: iPortfolio
+    * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+    * Updated: Jun 29 2024 with Bootstrap v5.3.3
+    * Author: BootstrapMade.com
+    * License: https://bootstrapmade.com/license/
+    ======================================================== -->
+
+    <style>
+      .progress {
+        margin-bottom: 20px;
+      }
+    
+      .progress-bar-wrap {
+        background-color: #e0e0e0;
+        border-radius: 20px;
+        overflow: hidden;
+        height: 20px;
+        width: 100%;
+      }
+    
+      .progress-bar {
+        background-color: #4caf50;
+        height: 100%;
+        width: 0%; /* Inicia vacía */
+        transition: width 1s ease; /* Para animación suave */
+      }
+
+      /* Portafolio filtro imagenes */
+      .isotope-item {
+      display: none;
+      }
+
+      .isotope-item.show {
+      display: block;
+      }
+
+      /* Refereencias personales, estudio, profesional */
+      .swiper {
+        width: 100%;
+        height: 300px; /* o el tamaño que necesites */
+      }
+
+      .swiper-slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .swiper-pagination {
+        bottom: 10px;
+      }
+
+      .swiper-slide img {
+        width: 100%;
+        height: auto;
+        border-radius: 50%;
+      }
+
+    </style>
+
+  </head>
+
+  <body class="index-page">
+    <main class="main">
+
+      <header id="header" class="header dark-background d-flex flex-column">
+        <i class="header-toggle d-xl-none bi bi-list"></i>
+
+        <div class="profile-img">
+        <img src="assets/img/my-profile-img.jpg" alt="" class="img-fluid rounded-circle">
+        <img src="assets/img/SebastianAceroLeon.png" alt="Sebastián Acero León"/>
+        </div>
+
+        <a href="index.html" class="logo d-flex align-items-center justify-content-center">
+          <h1 class="sitename">Sebastian Acero León</h1>
+        </a>
+
+        <div class="social-links text-center">
+          <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
+          <a href="https://www.facebook.com/sebastian.aceroleon.7" class="facebook"><i class="bi bi-facebook"></i></a>
+          <a href="https://www.instagram.com/sebastianacero11/?next=%2F" class="instagram"><i class="bi bi-instagram"></i></a>
+          <a href="https://walaswebsite-mvc-ajd6dmh5g5csd6bb.brazilsouth-01.azurewebsites.net" class="google-plus"><i class="bi bi-globe"></i></a>
+          <a href="https://www.linkedin.com/in/sebastián-acero-león-1122711b8/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        </div>
+
+        <!-- MENU -->
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Inicio</a></li>
+            <li><a href="#about"><i class="bi bi-person navicon"></i> Sobre Mi</a></li>
+            <li><a href="#skills"><i class="bi bi-award navicon"></i> Habilidades</a></li>
+            <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resumen</a></li>
+            <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
+            <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i> Servicios</a></li>
+            <!-- <li class="dropdown">
+              <a href="#"><i class="bi bi-menu-button navicon"></i> <span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <ul>
+                  <li><a href="#">Dropdown 1</a></li>
+                  <li class="dropdown">
+                    <a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                    <ul>
+                      <li><a href="#">Deep Dropdown 1</a></li>
+                      <li><a href="#">Deep Dropdown 2</a></li>
+                      <li><a href="#">Deep Dropdown 3</a></li>
+                      <li><a href="#">Deep Dropdown 4</a></li>
+                      <li><a href="#">Deep Dropdown 5</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Dropdown 2</a></li>
+                  <li><a href="#">Dropdown 3</a></li>
+                  <li><a href="#">Dropdown 4</a></li>
+              </ul>
+            </li> -->
+            <li><a href="#testimonials"><i class="bi bi-person navicon"></i> Referencias</a></li>
+            <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contacto</a></li>
+          </ul>
+        </nav>
+
+      </header>
+
+        <!-- ------------------------------------------------- @RenderBody() ------------------------------------------------- -->
+
+        <body class="index-page">
+
+          <main class="main">
+      
+              <!-- Hero Section -->
+              <section id="hero" class="hero section dark-background">
+                <img src="assets/img/WllpaperDevelpment.jpg" />
+                <div class="container" data-aos="fade-up" data-aos-delay="100">
+                    <h2>Sebastian Acero León</h2>
+                    <p>Ing. <span class="typed" data-typed-items="Desarrollador, Desarrollador Web, Desarrollador FullStack, Analista Web, Analista de DB">Designer</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+                </div>
+              </section><!-- /Hero Section -->
+
+              <!-- About Section -->
+              <section id="about" class="about section">
+      
+                <!-- Section Title -->
+                <div class="container section-title" data-aos="fade-up">
+                  <h2>Sobre mi</h2>
+                  <p>
+                      Soy una persona responsable, amable y puntual, valores que, junto con mi capacidad de aprendizaje, me han permitido destacar en los distintos roles que he asumido a lo largo de mi vida. Cuento con una sólida capacidad de análisis e interpretación de información, lo que me permite diseñar algoritmos que, al implementarse en software, brindan soluciones eficaces a problemas cotidianos. Estoy siempre dispuesto y abierto al aprendizaje continuo, buscando crecer como una persona íntegra en todos los contextos de mi vida: personal, familiar y laboral.
+                  </p>
+                </div><!-- End Section Title -->
+      
+                <div class="container" data-aos="fade-up" data-aos-delay="100">
+                  <div class="row gy-4 justify-content-center">
+                    <div class="col-lg-4">
+                        <img src="assets/img/SebastianAceroLeon.png" />
+                    </div>
+                    <div class="col-lg-8 content">
+                      <h2>Desarrollador Web &amp; Analista.</h2>
+                      <p class="fst-italic py-3">
+                          Desarrollador Web FullStack | ASP.Net | Core | C# | Node Js | JavaScript | TypeScript | HTML5 | CCS | Angular Js | Microsoft SQL server | MySQL | GIT | Postman | Ingeniero Electrónico | Especialista en Ingenieria de Software |.
+                      </p>
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <ul>
+                            <li><i class="bi bi-chevron-right"></i> <strong>Cumpleaños:</strong> <span>28 Marzo 1999</span></li>
+                            <li><i class="bi bi-chevron-right"></i><strong>Sitio Web:</strong><a href="https://walaswebsite-mvc-ajd6dmh5g5csd6bb.brazilsouth-01.azurewebsites.net" target="_blank">https://walaswebsite-mvc-ajd6dmh5g5csd6bb.brazilsouth-01.azurewebsites.net</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <strong>Teléfono:</strong> <span>(+57) 319 210 6183</span></li>
+                            <li><i class="bi bi-chevron-right"></i> <strong>Ciudad:</strong> <span>Bogotá D.C.</span></li>
+                          </ul>
+                        </div>
+                        <div class="col-lg-6">
+                          <ul>
+                            <li><i class="bi bi-chevron-right"></i> <strong>Edad:</strong> <span>25</span></li>
+                            <li><i class="bi bi-chevron-right"></i> <strong>Grado:</strong> <span>Especialista en Ingenieria de Software</span></li>
+                            <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>sebastianaceroleon@outlook.com</span></li>
+                            <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <p class="py-3">
+                        ;).
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </section><!-- /About Section -->
+
+              <!-- Stats Section -->
+              <section id="stats" class="stats section">
+                <div class="container" data-aos="fade-up" data-aos-delay="100">
+                  <div class="row gy-4">
+  
+                    <div class="col-lg-3 col-md-6">
+                        <div class="stats-item">
+                            <i class="bi bi-emoji-smile"></i>
+                            <span data-purecounter-start="0" data-purecounter-end="62" data-purecounter-duration="1" class="purecounter"></span>
+                            <p><strong>Clientes felices</strong> <span>Con las mejoras de codigo y entregas puntuales.</span></p>
+                        </div>
+                    </div><!-- End Stats Item -->
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="stats-item">
+                            <i class="bi bi-journal-richtext"></i>
+                            <span data-purecounter-start="0" data-purecounter-end="8" data-purecounter-duration="1" class="purecounter"></span>
+                            <p><strong>Proyectos</strong> <span>Nacionales e internacionales.</span></p>
+                        </div>
+                    </div><!-- End Stats Item -->
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="stats-item">
+                            <i class="bi bi-headset"></i>
+                            <span data-purecounter-start="0" data-purecounter-end="8760" data-purecounter-duration="1" class="purecounter"></span>
+                            <p><strong>Horas de soporte</strong> <span>Continua.</span></p>
+                        </div>
+                    </div><!-- End Stats Item -->
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="stats-item">
+                            <i class="bi bi-people"></i>
+                            <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="1" class="purecounter"></span>
+                            <p><strong>Equipos de trabajo</strong> <span>En despligues continuos.</span></p>
+                        </div>
+                    </div><!-- End Stats Item -->
+  
+                  </div>
+                </div>
+              </section><!-- /Stats Section -->
+
+              <!-- Skills Section -->
+              <section id="skills" class="skills section light-background">
+      
+                <!-- Section Title -->
+                <div class="container section-title" data-aos="fade-up">
+                    <h2>Habilidades</h2>
+                    <p>Si hay algo que define mi camino en el desarrollo de software es mi constante aprendizaje y mejora. A lo largo de mi carrera, he trabajado con diversas tecnologías, desde el backend robusto hasta interfaces atractivas, y me gusta medir cómo manejo cada una de estas áreas. No soy perfecto, pero estoy orgulloso de los porcentajes que voy logrando. ¡Aquí van mis habilidades!</p>
+                </div><!-- End Section Title -->
+      
+                <div class="container" data-aos="fade-up" data-aos-delay="100">
+      
+                  <!-- Habilidades en software -->
+                  <div class="row skills-content skills-animation">
+  
+                    <h4>Habilidades en software</h4>
+                    <div class="col-lg-6">
+
+                      <div class="progress">
+                        <span class="skill"><span>HTML</span> <i class="val">100%</i></span>
+                        <div class="progress-bar-wrap">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div><!-- End Skills Item HTML -->
+
+                      <div class="progress">
+                          <span class="skill"><span>CSS</span> <i class="val">90%</i></span>
+                          <div class="progress-bar-wrap">
+                              <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="90"></div>
+                          </div>
+                      </div><!-- End Skills Item CSS -->
+
+                      <div class="progress">
+                          <span class="skill"><span>JavaScript</span> <i class="val">75%</i></span>
+                          <div class="progress-bar-wrap">
+                              <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                      </div><!-- End Skills Item JavaScript -->
+
+                      <div class="progress">
+                          <span class="skill"><span>TypeScript</span> <i class="val">75%</i></span>
+                          <div class="progress-bar-wrap">
+                              <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                      </div><!-- End Skills Item TypeScript -->
+
+                      <div class="progress">
+                          <span class="skill"><span>C#</span> <i class="val">90%</i></span>
+                          <div class="progress-bar-wrap">
+                              <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                      </div><!-- End Skills Item C# -->
+
+                      <div class="progress">
+                          <span class="skill"><span>Postman</span> <i class="val">90%</i></span>
+                          <div class="progress-bar-wrap">
+                              <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                      </div><!-- End Skills Item Postman -->
+
+                    </div>
+  
+                    <div class="col-lg-6">
+
+                      <div class="progress">
+                          <span class="skill"><span>.Net</span> <i class="val">90%</i></span>
+                          <div class="progress-bar-wrap">
+                              <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                      </div><!-- End Skills Item .Net -->
+
+                      <div class="progress">
+                          <span class="skill"><span>SQL Server</span> <i class="val">95%</i></span>
+                          <div class="progress-bar-wrap">
+                              <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                      </div><!-- End Skills Item -->
+
+                      <div class="progress">
+                          <span class="skill"><span>Angular</span> <i class="val">85%</i></span>
+                          <div class="progress-bar-wrap">
+                              <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                      </div><!-- End Skills Item Angular -->
+
+                      <div class="progress">
+                          <span class="skill"><span>Node</span> <i class="val">65%</i></span>
+                          <div class="progress-bar-wrap">
+                              <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                      </div><!-- End Skills Item Node -->
+
+                      <div class="progress">
+                          <span class="skill"><span>GIT</span> <i class="val">80%</i></span>
+                          <div class="progress-bar-wrap">
+                              <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                      </div><!-- End Skills Item C# -->
+
+                      <div class="progress">
+                          <span class="skill"><span>Swagger</span> <i class="val">90%</i></span>
+                          <div class="progress-bar-wrap">
+                              <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                      </div><!-- End Skills Item Swagger -->
+
+                    </div>
+                  </div>
+      
+                  <!-- HABLIDADES BLANDAS -->
+                  <div class="row skills-content skills-animation">
+  
+                    <h4>Habilidades Blandas</h4>
+  
+                    <div class="col-lg-6">
+
+                      <div class="progress">
+                          <span class="skill"><span>Comunicación efectiva</span> <i class="val">96%</i></span>
+                          <div class="progress-bar-wrap">
+                              <div class="progress-bar" role="progressbar" aria-valuenow="96" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                      </div><!-- End Skills Item Comunicación efectiva -->
+
+                      <div class="progress">
+                          <span class="skill"><span>Comunicación efectiva</span> <i class="val">96%</i></span>
+                          <div class="progress-bar-wrap">
+                              <div class="progress-bar" role="progressbar" aria-valuenow="96" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                      </div><!-- End Skills Item Comunicación efectiva -->
+
+                      <div class="progress">
+                          <span class="skill"><span>Trabajo en equipo</span> <i class="val">100%</i></span>
+                          <div class="progress-bar-wrap">
+                              <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                      </div><!-- End Skills Item Trabajo en equipo -->
+
+                      <div class="progress">
+                          <span class="skill"><span>Pensamiento crítico</span> <i class="val">92%</i></span>
+                          <div class="progress-bar-wrap">
+                              <div class="progress-bar" role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                      </div><!-- End Skills Item Pensamiento crítico -->
+
+                      <div class="progress">
+                          <span class="skill"><span>Proactividad</span> <i class="val">91%</i></span>
+                          <div class="progress-bar-wrap">
+                              <div class="progress-bar" role="progressbar" aria-valuenow="91" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                      </div><!-- End Skills Item Proactividad -->
+
+                    </div>
+  
+                    <div class="col-lg-6">
+
+                      <div class="progress">
+                          <span class="skill"><span>Resolución de problemas</span> <i class="val">90%</i></span>
+                          <div class="progress-bar-wrap">
+                              <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                      </div><!-- End Skills Item Resolución de problemas -->
+
+                      <div class="progress">
+                          <span class="skill"><span>Comunicación efectiva</span> <i class="val">96%</i></span>
+                          <div class="progress-bar-wrap">
+                              <div class="progress-bar" role="progressbar" aria-valuenow="96" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                      </div><!-- End Skills Item Comunicación efectiva -->
+
+                      <div class="progress">
+                          <span class="skill"><span>Adaptabilidad</span> <i class="val">82%</i></span>
+                          <div class="progress-bar-wrap">
+                              <div class="progress-bar" role="progressbar" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                      </div><!-- End Skills Item Adaptabilidad -->
+
+                      <div class="progress">
+                          <span class="skill"><span>Empatía</span> <i class="val">97%</i></span>
+                          <div class="progress-bar-wrap">
+                              <div class="progress-bar" role="progressbar" aria-valuenow="97" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                      </div><!-- End Skills Item Empatía -->
+
+                      <div class="progress">
+                          <span class="skill"><span>Creatividad</span> <i class="val">94%</i></span>
+                          <div class="progress-bar-wrap">
+                              <div class="progress-bar" role="progressbar" aria-valuenow="94" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                      </div><!-- End Skills Item Creatividad -->
+
+                    </div>
+
+                  </div>
+                </div>
+              </section><!-- /Skills Section -->
+
+              <!-- Resume Section -->
+              <section id="resume" class="resume section">
+      
+                  <!-- Section Title -->
+                  <div class="container section-title" data-aos="fade-up">
+                      <h2>Resumen</h2>
+                      <p>
+                          👋 ¡Hola! Soy Sebastián Acero León, Ingeniero Electrónico egresado de la Universidad Santo Tomás.<br /><br />
+      
+                          👨🏻‍🎓 Mi formación académica y profesional ha sido muy enriquecedora, tanto en la universidad como en mi trabajo actual. En ambos ámbitos, he experimentado un crecimiento continuo como persona y profesional. A lo largo de mi carrera, he recibido un reconocimiento destacado en programación, lo que me llevó a ser monitor de la materia durante varios semestres consecutivos. Esta experiencia me permitió ampliar mi perspectiva y definir claramente lo que quiero lograr en mi carrera.<br /><br />
+      
+                          👨🏻‍💼 Profesionalmente, me siento muy afortunado, ya que desde temprana edad logré conseguir un puesto como Analista de Base de Datos en SQL, lo que me brindó una sólida base para convertirme en un profesional competitivo en el mercado. He tenido el privilegio de trabajar para grandes empresas, como Seguros del Estado. Además, obtuve un ascenso a Desarrollador Web FullStack en una prueba interna de la empresa, lo que me ha impulsado a seguir aprendiendo cada día y aspirar a convertirme en uno de los mejores desarrolladores dentro de mi equipo.<br /><br />
+      
+                          🙋🏻‍♂️ Mi personalidad se caracteriza por ser amigable, extrovertido y capaz de establecer relaciones fácilmente. Me gusta transmitir tranquilidad a las personas a mi alrededor, y he tenido la fortuna de recibir ese mismo apoyo en mis relaciones personales.<br /><br />
+      
+                          🎯 Mis objetivos a corto y mediano plazo incluyen continuar mi formación, aprender más sobre programación y obtener títulos adicionales, como una especialización y una maestría. También tengo como metas personales terminar de pagar mi automóvil, adquirir una vivienda propia, aprender a tocar el piano y viajar a lugares extraordinarios, lo cual ha sido un sueño que he perseguido por mucho tiempo.<br /><br />
+                  </div><!-- End Section Title -->
+      
+                  <div class="container">
+      
+                      <div class="row">
+      
+                          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                              <h3 class="resume-title">Resumen</h3>
+      
+                              <div class="resume-item pb-0">
+                                  <h4>Sebastian Acero León</h4>
+                                  <p><em>Soy Sebastián Acero León, un desarrollador apasionado por la tecnología y con más de 3 años de experiencia en la creación de soluciones de software centradas en el usuario. A lo largo de mi carrera, he diseñado y desarrollado aplicaciones web y soluciones digitales utilizando las últimas tecnologías y metodologías ágiles. Mi enfoque está en cumplir con los plazos establecidos, siempre con un alto nivel de calidad y optimización. Estoy comprometido con el aprendizaje continuo y la mejora constante en cada proyecto que emprendo.</em></p>
+                                  <ul>
+                                      <li>Colombia, Bogtá D.C</li>
+                                      <li>(+57) 319 210-6183</li>
+                                      <li>sebastianaceroleon@outlook.com</li>
+                                  </ul>
+                              </div><!-- Edn Resume Item -->
+      
+                              <!-- EDUCACION FORMAL -->
+                              <h3 class="resume-title">Educación Formal</h3> <!-- Edn EDUCACION FORMAL -->
+      
+                              <div class="resume-item">
+                                  <h4>Especialista en Ingeniería de Software</h4>
+                                  <h5>2024 - 2025-1</h5>
+                                  <p><em>Universidad Distrital Francisco José de Caldas. &amp; Bogotá D.C, CO</em></p>
+                                  <p>Actualmente, desarrollo competencias avanzadas en diseño, implementación y gestión de proyectos de software, con énfasis en metodologías como Domain-Driven Design (DDD) y la creación de soluciones tecnológicas innovadoras que se ajusten a las necesidades del mundo real.</p>
+                              </div><!-- Edn Resume Item -->
+      
+                              <div class="resume-item">
+                                  <h4>Diplomado FullStack</h4>
+                                  <h5>2023 - 2024</h5>
+                                  <p><em>Universidad Piloto &amp; Bogotá D.C, CO</em></p>
+                                  <p>Me enfoqué en dominar herramientas y tecnologías de desarrollo FullStack, incluyendo lenguajes como JavaScript, frameworks como Angular y Node.js, y la integración con bases de datos relacionales y no relacionales para crear aplicaciones web dinámicas y robustas.</p>
+                              </div><!-- Edn Resume Item -->
+      
+                              <div class="resume-item">
+                                  <h4>Ingeniero Electrónico</h4>
+                                  <h5>2016 - 2023-1</h5>
+                                  <p><em>Universidad Santo Tomas. &amp; Bogotá D.C, CO</em></p>
+                                  <p>Durante mi formación, adquirí conocimientos sólidos en diseño de sistemas electrónicos y programación de hardware, destacándome en proyectos de automatización, IoT y desarrollo de software embebido con microcontroladores como Arduino y ESP32.</p>
+                              </div><!-- Edn Resume Item -->
+      
+                              <div class="resume-item">
+                                  <h4>Bachiller Académico</h4>
+                                  <h5>2001 - 2015</h5>
+                                  <p><em>Instituto Mayor de Occidente. &amp; Bogotá D.C, CO</em></p>
+                                  <p>Formación académica que sentó las bases de mi disciplina, responsabilidad y habilidades en matemáticas, ciencias y lógica, las cuales me impulsaron a explorar y desarrollarme en áreas tecnológicas y de ingeniería.</p>
+                              </div><!-- Edn Resume Item -->
+      
+                              <!-- EDUCACION NO FORMAL -->
+                              <h3 class="resume-title">Educación No Formal</h3><!-- Edn EDUCACION NO FORMAL -->
+      
+                              <div class="resume-item">
+                                  <h4>Certificación en SQL Server : Programacion avanzada</h4>
+                                  <h5>2022 - 2022</h5>
+                                  <p><em>Udemy, Bogotá D.C, CO</em></p>
+                                  <p>Curso que profundizó mis conocimientos en SQL Server, permitiéndome optimizar consultas y gestionar bases de datos con mayor eficiencia en proyectos tecnológicos.</p>
+                              </div><!-- Edn Resume Item -->
+      
+                              <div class="resume-item">
+                                  <h4>Certificación en SCRUM Master</h4>
+                                  <h5>2022 - 2022</h5>
+                                  <p><em>Udemy, Bogotá D.C, CO</em></p>
+                                  <p>Formación que me permitió gestionar proyectos ágiles con Scrum, optimizando la colaboración y la entrega de proyectos tecnológicos de manera eficiente.</p>
+                              </div><!-- Edn Resume Item -->
+      
+                              <div class="resume-item">
+                                  <h4>Certificacion Excel Avanzado</h4>
+                                  <h5>2021 - 2021</h5>
+                                  <p><em>Universidad Santo Tomás, Bogotá D.C, CO</em></p>
+                                  <p>Curso que fortaleció mis habilidades en la gestión de datos, automatización de procesos y análisis de información, mejorando mi eficiencia en la manipulación de grandes volúmenes de datos.</p>
+                              </div><!-- Edn Resume Item -->
+      
+                              <div class="resume-item">
+                                  <h4>Ingles nivel : B2</h4>
+                                  <h5>2014 - 2016</h5>
+                                  <p><em>American School Way, Bogotá D.C, CO</em></p>
+                                  <p>Curso que mejoró mi comprensión y expresión en inglés, facilitando mi comunicación en entornos profesionales internacionales y el acceso a información técnica en inglés.</p>
+                              </div><!-- Edn Resume Item -->
+      
+                          </div>
+      
+                          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+                              <h3 class="resume-title">Experencia Profesional</h3>
+                              <div class="resume-item">
+                                  <h4>Ingeniero Desarrollador Informático</h4>
+                                  <h5>2024/06/06 - Actualmente</h5>
+                                  <p><em>Tech Education, Colombia, Bogotá D.C </em></p>
+                                  <ul>
+                                      <li>Desarrollar y mantener soluciones backend utilizando C# con .NET ASP Core y JavaScript.</li>
+                                      <li>Levantar y documentar requerimientos siguiendo normas ISO.</li>
+                                      <li>Resolver incidencias, realizar mejoras en el código e implementar nuevos desarrollos.</li>
+                                      <li>Utilizar servicios de Azure, como Logic Apps, monitoreo de BusService y despliegues continuos.</li>
+                                      <li>Crear y mantener documentación conforme a normas ISO, incluyendo la documentación de APIs con Swagger.</li>
+                                      <li>Gestionar el control de versiones utilizando Git y Bitbucket, y manejar asignación y documentación de tareas en Jira.</li>
+                                      <li>Optimizar, depurar y desarrollar procedimientos almacenados en bases de datos Microsoft SQL Server y MySQL.</li>
+                                      <li>Realizar tareas en bases de datos, como creación y actualización de tablas, funciones, vistas e índices.</li>
+                                      <li>Trabajar con VPNs y conexiones remotas para acceso a servidores y bases de datos.</li>
+                                  </ul>
+                              </div><!-- Edn Resume Item -->
+      
+                              <div class="resume-item">
+                                  <h4>Desarrollador Web Full Stack Jr</h4>
+                                  <h5>2022 - 2024</h5>
+                                  <p><em>Transfiriendo, Colombia, Bogotá D.C</em></p>
+                                  <ul>
+                                      <li>Desarrollar y mantener funcionalidades tanto en FrontEnd como en BackEnd utilizando tecnologías como C#, Node.js en .NET, Angular, HTML5, CSS, TypeScript y JavaScript.</li>
+                                      <li>Solucionar errores y realizar mejoras estructurales en la plataforma.</li>
+                                      <li>Crear nuevos módulos en la plataforma y generar paquetes de publicación para ambientes de pruebas.</li>
+                                      <li>Utilizar conexiones remotas y VPN para acceso al servidor y despliegues.</li>
+                                      <li>Gestionar el control de versiones mediante Git, realizando cambios y commits en la plataforma.</li>
+                                      <li>Optimizar, corregir y crear nuevos procedimientos almacenados en Microsoft SQL Server.</li>
+                                      <li>Realizar tareas en bases de datos, incluyendo la búsqueda de información, creación de tablas e índices, y planteamientos de optimización.</li>
+                                  </ul>
+                              </div><!-- Edn Resume Item -->
+      
+                              <div class="resume-item">
+                                  <h4>Analista funcional de base de datos Ssr</h4>
+                                  <h5>2021 - 2022</h5>
+                                  <p><em>Transfiriendo, Colombia, Bogotá D.C</em></p>
+                                  <ul>
+                                      <li>Analizar y optimizar bases de datos para mejorar su rendimiento y resolver casos específicos.</li>
+                                      <li>Crear y ejecutar consultas SQL para solucionar errores, realizar cruces de información y generar informes para clientes.</li>
+                                      <li>Diseñar e implementar planes de trabajo enfocados en satisfacer las necesidades de los clientes.</li>
+                                      <li>Levantar y documentar requerimientos de clientes para la implementación de mejoras y nuevas funcionalidades en el software.</li>
+                                      <li>Realizar análisis detallados de casos solicitados y ofrecer soluciones efectivas utilizando metodología Scrum.</li>
+                                      <li>Entregar información precisa al cliente mediante cruces de datos y elaboración de informes detallados.</li>
+                                      <li>Colaborar en proyectos de facturación electrónica con la implementación de nuevas versiones y actualizaciones de software.</li>
+                                  </ul>
+                              </div><!-- Edn Resume Item -->
+      
+                              <div class="resume-item">
+                                  <h4>Analista funcional de base de datos Jr</h4>
+                                  <h5>2020 - 2021</h5>
+                                  <p><em>Transfiriendo, Colombia, Bogotá D.C</em></p>
+                                  <ul>
+                                      <li>Analizar consultas en bases de datos para resolver casos y mejorar el rendimiento de las mismas.</li>
+                                      <li>Optimizar bases de datos mediante mejoras estructurales y creación de índices.</li>
+                                      <li>Diseñar y ejecutar consultas SQL para la solución de errores, cruces de información y entrega de datos a los clientes.</li>
+                                      <li>Realizar análisis y procesamiento de documentos en Excel, integrando datos para generar informes detallados.</li>
+                                      <li>Implementar nuevas versiones y mejoras en software de facturación electrónica en colaboración con los clientes.</li>
+                                      <li>Atender y gestionar solicitudes de clientes, proporcionando soluciones basadas en un análisis exhaustivo de los casos.</li>
+                                      <li>Desarrollar planes de trabajo orientados a optimizar procesos y ofrecer resultados positivos a los clientes.</li>
+                                  </ul>
+                              </div><!-- Edn Resume Item -->
+      
+                          </div>
+      
+                      </div>
+      
+                  </div>
+      
+              </section><!-- /Resume Section -->
+
+              <!-- Portfolio Section -->
+              <section id="portfolio" class="portfolio section light-background">
+      
+                <!-- Section Title -->
+                <div class="container section-title" data-aos="fade-up">
+                    <h2>Portfolio</h2>
+                    <p>A lo largo de mi carrera, he tenido la oportunidad de trabajar en diversos proyectos que reflejan mi habilidad y dedicación como desarrollador. Mi portafolio incluye una variedad de trabajos, desde aplicaciones web hasta soluciones innovadoras para diferentes industrias. Cada uno de estos proyectos representa no solo mis conocimientos técnicos, sino también mi compromiso con la calidad y la mejora continua. Te invito a explorar algunas de las soluciones que he creado y los resultados que he logrado.</p>
+                </div><!-- End Section Title -->
+      
+                <div class="container">
+                  <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+  
+                    <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+                        <li data-filter="*" class="filter-active">All</li>
+                        <li data-filter=".filter-API">API</li>
+                        <li data-filter=".filter-DataBase">Data Base</li>
+                        <li data-filter=".filter-GIT">GIT</li>
+                        <li data-filter=".filter-Cloud">Cloud</li>
+                    </ul><!-- End Portfolio Filters -->
+
+                    <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+                      <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-API">
+                        <div class="portfolio-content h-100">
+                          <img src="assets/img/portfolio/Portafolio_ApiSwagger_WalasWeb.png" class="img-fluid" alt="">
+                          <div class="portfolio-info">
+                            <h4>Api Swagger MircoServices</h4>
+                            <p>Lorem ipsum, dolor sit amet consectetur</p>
+                            <a href="assets/img/portfolio/Portafolio_ApiSwagger_WalasWeb.png" title="Api Swagger MircoServices" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                            <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                          </div>
+                        </div>
+                      </div><!-- End Portfolio Item ApiSwagger_WalasWeb -->
+
+                      <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-Cloud">
+                        <div class="portfolio-content h-100">
+                          <img src="assets/img/portfolio/Portafolio_AzureAppService_WalasWeb.png" class="img-fluid" alt="">
+                          <div class="portfolio-info">
+                            <h4>Azure MVC AppService</h4>
+                            <p>Lorem ipsum, dolor sit amet consectetur</p>
+                            <a href="assets/img/portfolio/Portafolio_AzureAppService_WalasWeb.png" title="Azure MVC AppService" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                            <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                          </div>
+                        </div>
+                      </div><!-- End Portfolio Item AzureAppService_WalasWeb -->
+
+                      <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-Cloud">
+                        <div class="portfolio-content h-100">
+                          <img src="assets/img/portfolio/Portafolio_AzureDataBase_WalasWeb.png" class="img-fluid" alt="">
+                          <div class="portfolio-info">
+                            <h4>Azure DataBase</h4>
+                            <p>Lorem ipsum, dolor sit amet consectetur</p>
+                            <a href="assets/img/portfolio/Portafolio_AzureDataBase_WalasWeb.png" title="Azure DataBase" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                            <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                          </div>
+                        </div>
+                      </div><!-- End Portfolio Item AzureDataBase_WalasWeb -->
+
+                      <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-GIT">
+                        <div class="portfolio-content h-100">
+                          <img src="assets/img/portfolio/Portafolio_GitExtension-Repository_WalasWeb.png" class="img-fluid" alt="">
+                          <div class="portfolio-info">
+                            <h4>GitExtension Repository</h4>
+                            <p>Lorem ipsum, dolor sit amet consectetur</p>
+                            <a href="assets/img/portfolio/Portafolio_GitExtension-Repository_WalasWeb.png" title="GitExtension Repository" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                            <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                          </div>
+                        </div>
+                      </div><!-- End Portfolio Item GitExtension-Repository_WalasWeb -->
+
+                      <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-GIT">
+                        <div class="portfolio-content h-100">
+                          <img src="assets/img/portfolio/Portafolio_GitExtension_WalasWeb.png" class="img-fluid" alt="">
+                          <div class="portfolio-info">
+                            <h4>GitExtension</h4>
+                            <p>Lorem ipsum, dolor sit amet consectetur</p>
+                            <a href="assets/img/portfolio/Portafolio_GitExtension_WalasWeb.png" title="GitExtension" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                            <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                          </div>
+                        </div>
+                      </div><!-- End Portfolio Item GitExtension_WalasWeb -->
+
+                      <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-GIT">
+                        <div class="portfolio-content h-100">
+                          <img src="assets/img/portfolio/Portafolio_GitHub-Repository_WalasWeb.png" class="img-fluid" alt="">
+                          <div class="portfolio-info">
+                            <h4>GitHub Repository</h4>
+                            <p>Lorem ipsum, dolor sit amet consectetur</p>
+                            <a href="assets/img/portfolio/Portafolio_GitHub-Repository_WalasWeb.png" title="GitHub Repository" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                            <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                          </div>
+                        </div>
+                      </div><!-- End Portfolio Item GitHub-Repository_WalasWeb -->
+
+                      <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-DataBase">
+                        <div class="portfolio-content h-100">
+                          <img src="assets/img/portfolio/Portafolio_SQLDataBase_WalasWeb.png" class="img-fluid" alt="">
+                          <div class="portfolio-info">
+                            <h4>SQL DataBase</h4>
+                            <p>Lorem ipsum, dolor sit amet consectetur</p>
+                            <a href="assets/img/portfolio/Portafolio_SQLDataBase_WalasWeb.png" title="SQL DataBase" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                            <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                          </div>
+                        </div>
+                      </div><!-- End Portfolio Item SQLDataBase_WalasWeb -->
+
+                      <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-API">
+                        <div class="portfolio-content h-100">
+                          <img src="assets/img/portfolio/Portafolio_VisualStudioApiMicroServices_WalasWeb.png" class="img-fluid" alt="">
+                          <div class="portfolio-info">
+                            <h4>VisualStudio API MicroServices</h4>
+                            <p>Lorem ipsum, dolor sit amet consectetur</p>
+                            <a href="assets/img/portfolio/Portafolio_VisualStudioApiMicroServices_WalasWeb.png" title="VisualStudio API MicroServices" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                            <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                          </div>
+                        </div>
+                      </div><!-- End Portfolio Item -->
+
+                      <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-API">
+                        <div class="portfolio-content h-100">
+                          <img src="assets/img/portfolio/Portafolio_VisualStudioApiMVC_WalasWeb.png" class="img-fluid" alt="">
+                          <div class="portfolio-info">
+                            <h4>VisualStudio API MVC</h4>
+                            <p>Lorem ipsum, dolor sit amet consectetur</p>
+                            <a href="assets/img/portfolio/Portafolio_VisualStudioApiMVC_WalasWeb.png" title="VisualStudio API MVC" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                            <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                          </div>
+                        </div>
+                      </div><!-- End Portfolio Item VisualStudioApiMVC_WalasWeb -->
+
+                      <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-API">
+                        <div class="portfolio-content h-100">
+                          <img src="assets/img/portfolio/Portafolio_PortafolioAPi_WalasWeb.png" class="img-fluid" alt="">
+                          <div class="portfolio-info">
+                            <h4>Portafolio APi</h4>
+                            <p>Lorem ipsum, dolor sit amet consectetur</p>
+                            <a href="assets/img/portfolio/Portafolio_PortafolioAPi_WalasWeb.png" title="Portafolio APi" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                            <a href="https://walaswebsite-mvc-ajd6dmh5g5csd6bb.brazilsouth-01.azurewebsites.net/#hero" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                          </div>
+                        </div>
+                      </div><!-- End Portfolio Item PortafolioAPi_WalasWeb -->
+
+                      <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-Cloud">
+                        <div class="portfolio-content h-100">
+                          <img src="assets/img/portfolio/Portafolio_MaquinaVirtual_WalasWeb.png" class="img-fluid" alt="">
+                          <div class="portfolio-info">
+                            <h4>Maquina Virtual</h4>
+                            <p>Lorem ipsum, dolor sit amet consectetur</p>
+                            <a href="assets/img/portfolio/Portafolio_MaquinaVirtual_WalasWeb.png" title="Maquina Virtual" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                            <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                          </div>
+                        </div>
+                      </div><!-- End Portfolio Item -->
+
+                      <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-API">
+                        <div class="portfolio-content h-100">
+                          <img src="assets/img/portfolio/Portafolio_Postman_WalasWeb.png" class="img-fluid" alt="">
+                          <div class="portfolio-info">
+                            <h4>Postman</h4>
+                            <p>Lorem ipsum, dolor sit amet consectetur</p>
+                            <a href="assets/img/portfolio/Portafolio_Postman_WalasWeb.png" title="Postman" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                            <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                          </div>
+                        </div>
+                      </div><!-- End Portfolio Item -->
+
+                    </div><!-- End Portfolio Container -->
+                  </div>
+                </div>
+              </section><!-- /Portfolio Section -->
+
+              <!-- Services Section -->
+              <section id="services" class="services section">
+      
+                  <!-- Section Title -->
+                  <div class="container section-title" data-aos="fade-up">
+                      <h2>Services</h2>
+                      <p>Como desarrollador y especialista en ingeniería de software, ofrezco servicios diseñados para transformar ideas en soluciones tecnológicas avanzadas. Desde diseño de arquitecturas escalables hasta la implementación de sistemas robustos, garantizo calidad y excelencia en cada proyecto.</p>
+                  </div><!-- End Section Title -->
+      
+                  <div class="container">
+                      <div class="row gy-4">
+      
+                          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
+                              <div class="icon flex-shrink-0"><i class="bi bi-code-slash"></i></div>
+                              <div>
+                                  <h4 class="title"><a href="service-details.html" class="stretched-link">Desarrollo Web y APIs</a></h4>
+                                  <p class="description">Creación de sitios web modernos, responsivos y APIs robustas utilizando tecnologías como .NET, Angular y más.</p>
+                              </div>
+                          </div>
+                          <!-- End Service Item -->
+      
+                          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
+                              <div class="icon flex-shrink-0"><i class="bi bi-diagram-3"></i></div>
+                              <div>
+                                  <h4 class="title"><a href="service-details.html" class="stretched-link">Arquitectura de Software</a></h4>
+                                  <p class="description">Diseño de arquitecturas escalables y sostenibles basadas en Domain-Driven Design (DDD) y patrones de diseño.</p>
+                              </div>
+                          </div><!-- End Service Item -->
+      
+                          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="300">
+                              <div class="icon flex-shrink-0"><i class="bi bi-bar-chart-line"></i></div>
+                              <div>
+                                  <h4 class="title"><a href="service-details.html" class="stretched-link">Análisis de Datos y Big Data</a></h4>
+                                  <p class="description">Implementación de soluciones para análisis de datos y procesamiento de grandes volúmenes de información.</p>
+                              </div>
+                          </div><!-- End Service Item -->
+      
+                          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="400">
+                              <div class="icon flex-shrink-0"><i class="bi bi-git"></i></div>
+                              <div>
+                                  <h4 class="title"><a href="service-details.html" class="stretched-link">Control de Versiones y DevOps</a></h4>
+                                  <p class="description">Gestión de código fuente en Git y estrategias DevOps para CI/CD en entornos como Azure DevOps.</p>
+                              </div>
+                          </div><!-- End Service Item -->
+      
+                          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="500">
+                              <div class="icon flex-shrink-0"><i class="bi bi-lightbulb"></i></div>
+                              <div>
+                                  <h4 class="title"><a href="service-details.html" class="stretched-link">Consultoría Tecnológica</a></h4>
+                                  <p class="description">Asesoramiento para mejorar procesos de desarrollo y seleccionar tecnologías adecuadas a tus proyectos.</p>
+                              </div>
+                          </div><!-- End Service Item -->
+      
+                          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="600">
+                              <div class="icon flex-shrink-0"><i class="bi bi-cloud-arrow-up"></i></div>
+                              <div>
+                                  <h4 class="title"><a href="service-details.html" class="stretched-link">Implementación en la Nube</a></h4>
+                                  <p class="description">Despliegue y administración de aplicaciones en la nube con plataformas como AWS y Azure.</p>
+                              </div>
+                          </div><!-- End Service Item -->
+      
+                      </div>
+                  </div>
+      
+              </section><!-- /Services Section -->
+
+              <!-- Testimonials Section -->
+              <section id="testimonials" class="testimonials section light-background">
+      
+                <!-- Section Title -->
+                <div class="container section-title" data-aos="fade-up">
+                  <h2>Referencias</h2>
+                  <p>¡Las referencias son una parte importante de mi trayectoria profesional! Si deseas conocer más sobre mi desempeño y habilidades, estaré encantado de proporcionarlas. Tengo una red sólida de colegas y supervisores que pueden dar fe de mi trabajo y compromiso. Puedes contactarme para obtener más detalles.</p>
+                </div><!-- End Section Title -->
+    
+                <div class="container" data-aos="fade-up" data-aos-delay="100">
+                  <div class="swiper init-swiper">
+                    <script type="application/json" class="swiper-config">
+                      {
+                        "loop": true,
+                        "speed": 600,
+                        "autoplay": {
+                          "delay": 5000
+                        },
+                        "slidesPerView": "auto",
+                        "pagination": {
+                          "el": ".swiper-pagination",
+                          "type": "bullets",
+                          "clickable": true
+                        },
+                        "breakpoints": {
+                          "320": {
+                            "slidesPerView": 1,
+                            "spaceBetween": 40
+                          },
+                          "1200": {
+                            "slidesPerView": 3,
+                            "spaceBetween": 1
+                          }
+                        }
+                      }
+                    </script>
+                    <div class="swiper-wrapper">
+
+                      <div class="swiper-slide">
+                        <div class="testimonial-item">
+                          <p>
+                            <i class="bi bi-quote quote-icon-left"></i>
+                            <span>Sebastián ha demostrado ser un profesional con una gran capacidad para abordar proyectos complejos. Su enfoque meticuloso y su habilidad para integrar soluciones tecnológicas en tiempo y forma lo han hecho destacar como un miembro clave en cualquier equipo de trabajo. Su habilidad para comunicarse con claridad y liderar iniciativas lo hacen invaluable.</span>
+                            <i class="bi bi-quote quote-icon-right"></i>
+                          </p>
+                          <img src="assets/img/testimonials/1-testimonials.jpg" class="testimonial-img" alt="">
+                          <h3>Edwin Francisco Forero</h3>
+                          <h4>Profesor &amp; Universidad Santo Tomás</h4>
+                        </div>
+                      </div><!-- End testimonial Edwin Francisco Forero item -->
+
+                      <div class="swiper-slide">
+                        <div class="testimonial-item">
+                          <p>
+                            <i class="bi bi-quote quote-icon-left"></i>
+                            <span>En mi experiencia trabajando con Sebastián, he notado su capacidad excepcional para analizar y resolver problemas técnicos complejos con rapidez y eficacia. Su ética de trabajo es impecable y siempre busca aprender y crecer profesionalmente. Su enfoque en el detalle y su dedicación son altamente admirables.</span>
+                            <i class="bi bi-quote quote-icon-right"></i>
+                          </p>
+                          <img src="assets/img/testimonials/4-testimonials.jpg" class="testimonial-img" alt="">
+                          <h3>Carlos Andrés Torres Pinzón</h3>
+                          <h4>Decano &amp; Universidad Santo Tomás</h4>
+                        </div>
+                      </div><!-- End testimonial Carlos Andrés Torres Pinzón item -->
+
+                      <div class="swiper-slide">
+                        <div class="testimonial-item">
+                          <p>
+                            <i class="bi bi-quote quote-icon-left"></i>
+                            <span>Sebastián es una persona extremadamente confiable y comprometida con los objetivos de su equipo. Durante nuestro tiempo trabajando juntos, mostró un impresionante dominio técnico combinado con una gran capacidad de liderazgo. Su enfoque pragmático y su actitud positiva hicieron que cada proyecto en el que participamos fuera un éxito rotundo.</span>
+                            <i class="bi bi-quote quote-icon-right"></i>
+                          </p>
+                          <img src="assets/img/testimonials/3-testimonials.jpg" class="testimonial-img" alt="">
+                          <h3>Sandra Milena Escamilla</h3>
+                          <h4>Coordinadora de seguridad industrial &amp; Permoda Limitada</h4>
+                        </div>
+                      </div><!-- End testimonial Sandra Milena Escamilla item -->
+
+                      <div class="swiper-slide">
+                        <div class="testimonial-item">
+                          <p>
+                            <i class="bi bi-quote quote-icon-left"></i>
+                            <span>Sebastián siempre ha demostrado una habilidad excepcional para gestionar proyectos de tecnología de manera eficiente. Su enfoque colaborativo y su capacidad para gestionar recursos y tiempos lo hacen un líder natural en el ámbito profesional. Siempre he admirado su capacidad para resolver problemas complejos con soluciones simples y efectivas.</span>
+                            <i class="bi bi-quote quote-icon-right"></i>
+                          </p>
+                          <img src="assets/img/testimonials/2-testimonials.jpg" class="testimonial-img" alt="">
+                          <h3>Freddy Antonio Rivera</h3>
+                          <h4>Coordinador de Compras y almacén &amp; HIDROCASANARE SAS</h4>
+                        </div>
+                      </div><!-- End testimonial Freddy Antonio Rivera item -->
+
+                      <div class="swiper-slide">
+                        <div class="testimonial-item">
+                          <p>
+                            <i class="bi bi-quote quote-icon-left"></i>
+                            <span>Lo que más destaco de Sebastián es su gran capacidad para afrontar retos con una mentalidad positiva y enfocada en resultados. Tiene un excelente dominio de las herramientas tecnológicas y siempre se asegura de entregar trabajos de la más alta calidad. Su profesionalismo y actitud colaborativa lo hacen una pieza clave en cualquier equipo de trabajo.</span>
+                            <i class="bi bi-quote quote-icon-right"></i>
+                          </p>
+                          <img src="assets/img/testimonials/5-testimonials.jpg" class="testimonial-img" alt="">
+                          <h3>Williams Estiven Carvajal Hernández</h3>
+                          <h4>Desarrollador .Net</h4>
+                        </div>
+                      </div><!-- End testimonial Williams Estiven Carvajal Hernández item -->
+
+                    </div><div class="swiper-pagination"></div>
+                  </div>
+                </div>
+              </section><!-- /Testimonials Section -->
+
+              <!-- Contact Section -->
+              <section id="contact" class="contact section">
+      
+                  <!-- Section Title -->
+                  <div class="container section-title" data-aos="fade-up">
+                      <h2>Contact</h2>
+                      <p>¿Tienes alguna pregunta, proyecto o idea en mente? 🧠 <br />
+                          ¡Estoy aquí para ayudarte! No dudes en contactarme y juntos encontraremos la mejor solución para tus necesidades. <br />
+                          Estoy disponible para colaborar en proyectos de desarrollo web, bases de datos o cualquier desafío tecnológico.
+                      </p>
+                  </div><!-- End Section Title -->
+      
+                  <div class="container" data-aos="fade-up" data-aos-delay="100">
+      
+                      <div class="row gy-4">
+      
+                          <div class="col-lg-5">
+      
+                              <div class="info-wrap">
+                                  <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+                                      <i class="bi bi-geo-alt flex-shrink-0"></i>
+                                      <div>
+                                          <h3>Dirrección</h3>
+                                          <p>Carrera 107 c # 70 - 76, Engativa, Villas del Dorado, Bogotá D.C</p>
+                                      </div>
+                                  </div><!-- End Info Item -->
+      
+                                  <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+                                      <i class="bi bi-telephone flex-shrink-0"></i>
+                                      <div>
+                                          <h3>Contactame</h3>
+                                          <p>(+57) 319 210 6183</p>
+                                      </div>
+                                  </div><!-- End Info Item -->
+      
+                                  <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+                                      <i class="bi bi-envelope flex-shrink-0"></i>
+                                      <div>
+                                          <h3>Email</h3>
+                                          <p><a href="mailto:sebastianaceroleon@outlook.com" target="_blank">sebastianaceroleon@outlook.com</a></p>
+                                      </div>
+                                  </div><!-- End Info Item -->
+      
+                                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.3675828431783!2d-74.12805052387189!3d4.706046395268979!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9caaed2dba53%3A0x30612e60095663e5!2sCra.%20107c%20%2370-76%2C%20Bogot%C3%A1!5e0!3m2!1ses!2sco!4v1735918336002!5m2!1ses!2sco" frameborder="0" style="border:0; width: 100%; height: 270px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                              </div>
+                          </div>
+      
+                          <div class="col-lg-7">
+                              <form asp-controller="WebSite" asp-action="SendEmail" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+                                  <div class="row gy-4">
+      
+                                      <div class="col-md-6">
+                                          <label for="name-field" class="pb-2">Tu Nombre</label>
+                                          <input type="text" name="name" id="name-field" class="form-control" required="">
+                                      </div>
+      
+                                      <div class="col-md-6">
+                                          <label for="email-field" class="pb-2">Tu Email</label>
+                                          <input type="email" class="form-control" name="email" id="email-field" required="">
+                                      </div>
+      
+                                      <div class="col-md-12">
+                                          <label for="subject-field" class="pb-2">Asunto</label>
+                                          <input type="text" class="form-control" name="subject" id="subject-field" required="">
+                                      </div>
+      
+                                      <div class="col-md-12">
+                                          <label for="message-field" class="pb-2">Mensaje</label>
+                                          <textarea class="form-control" name="message" rows="10" id="message-field" required=""></textarea>
+                                      </div>
+      
+                                      <div class="col-md-12 text-center">
+                                          <div class="loading">Loading</div>
+                                          <div class="error-message"></div>
+                                          <div class="sent-message">Tu mensaje ha sido enviado, !Gracias¡</div>
+                                          <button type="submit">Enviar Mensaje</button>
+                                      </div>
+      
+                                  </div>
+                              </form>
+                          </div><!-- End Contact Form -->
+      
+                      </div>
+      
+                  </div>
+      
+              </section><!-- /Contact Section -->
+      
+          </main>
+      </body>
+
+        <!-- ------------------------------------------------- @RenderBody() ------------------------------------------------- -->
+
+        <!-- FOOTER -->
+        <footer id="footer" class="footer position-relative light-background">
+          <div class="container">
+            <div class="copyright text-center ">
+              <p>© <span>Copyright</span> <strong class="px-1 sitename">WalasWebSite</strong> <span>All Rights Reserved</span></p>
+            </div>
+            <div class="credits">
+              Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> Distributed by <a href="https://themewagon.com">ThemeWagon</a>
+            </div>
+            <div class="copyright text-center ">
+              <p><span>Diciembre 2024</span></p>
+            </div>
+          </div>
+        </footer><!-- /Contact Section -->
+
+
+        <!-- Scroll Top -->
+        <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+        <!-- Preloader -->
+        <div id="preloader"></div>
+
+        <!-- Vendor JS Files -->
+        <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/vendor/php-email-form/validate.js"></script>
+        <script src="assets/vendor/aos/aos.js"></script>
+        <script src="assets/vendor/typed.js/typed.umd.js"></script>
+        <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+        <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+        <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+        <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+        <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+        <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+        <!-- Main JS File -->
+        <script src="assets/js/main.js"></script>
+        <script src=C:\Repositorios\Walas_WebSite_Angula_Hv\WalasWebSiteAngularHv\main.js></script>
+
+        <script src="~/lib/jquery/dist/jquery.min.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="~/js/site.js" asp-append-version="true"></script>
+        <script src="~/js/main.js"></script>
+
+        <!-- Swiper JS -->
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    </main>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const progressBars = document.querySelectorAll('.progress-bar');
+        
+        progressBars.forEach((bar) => {
+          const valueNow = bar.getAttribute('aria-valuenow'); // Obtén el valor del ancho
+          setTimeout(() => {
+            bar.style.width = `${valueNow}%`; // Aplica el ancho dinámico
+          }, 500); // Espera 500ms antes de iniciar
+        });
+      });
+
+      // Filtro de imagenes portafolio
+      document.addEventListener('DOMContentLoaded', () => {
+        const filters = document.querySelectorAll('.portfolio-filters li');
+        const items = document.querySelectorAll('.portfolio-item');
+
+        // Función para aplicar el filtro
+        const applyFilter = (filterValue) => {
+          items.forEach(item => {
+            if (filterValue === '*' || item.classList.contains(filterValue.substring(1))) {
+              item.classList.add('show');
+            } else {
+              item.classList.remove('show');
+            }
+          });
+        };
+
+        // Aplicar el filtro predeterminado (mostrar todos los elementos)
+        const defaultFilter = document.querySelector('.portfolio-filters .filter-active');
+        if (defaultFilter) {
+          const defaultFilterValue = defaultFilter.getAttribute('data-filter');
+          applyFilter(defaultFilterValue);
+        }
+
+        // Agregar evento click a los filtros
+        filters.forEach(filter => {
+          filter.addEventListener('click', () => {
+            // Eliminar la clase activa de todos los filtros
+            filters.forEach(f => f.classList.remove('filter-active'));
+
+            // Agregar la clase activa al filtro seleccionado
+            filter.classList.add('filter-active');
+
+            // Aplicar el filtro seleccionado
+            const filterValue = filter.getAttribute('data-filter');
+            applyFilter(filterValue);
+          });
+        });
+      });
+
+      //Referencias
+      document.addEventListener("DOMContentLoaded", function () {
+        var swiper = new Swiper(".swiper", {
+          loop: true,
+          speed: 600,
+          autoplay: {
+            delay: 5000
+          },
+          slidesPerView: "auto",
+          pagination: {
+            el: ".swiper-pagination",
+            type: "bullets",
+            clickable: true
+          },
+          breakpoints: {
+            320: {
+              slidesPerView: 1,
+              spaceBetween: 40
+            },
+            1200: {
+              slidesPerView: 3,
+              spaceBetween: 1
+            }
+          }
+        });
+      });
+
+    </script>
+
+  </body>
+</html>
