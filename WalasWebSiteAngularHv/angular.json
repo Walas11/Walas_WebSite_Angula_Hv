@@ -24,11 +24,16 @@
               {
                 "glob": "**/*",
                 "input": "public"
+              },
+              {
+                "glob": "**/*",
+                "input": "src/lib"
               }
             ],
             "styles": [
               /* boostrap */
-              //"src/lib/bootstrap/dist/css/bootstrap.min.css",
+              "src/lib/bootstrap/dist/css/bootstrap.min.css",
+
               "src/styles.css",
               "src/wwwroot/css/main.css",
               "src/wwwroot/css/site.css",
